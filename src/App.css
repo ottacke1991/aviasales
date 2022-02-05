@@ -1,38 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
+  background: #e5e5e5;
+}
+
+.app__container {
+  border: 1px solid green;
+  min-height: 100vh;
+  max-width: 754px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  border: 1px solid green;
+  padding: 50px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__main {
+  border: 1px solid green;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__sidebar {
+  border: 1px solid orangered;
+
+  width: 232px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__content {
+  border: 1px solid gold;
+  width: 502px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.ticket-option-group {
+  border: 1px solid lawngreen;
+  height: 50px;
+  margin-bottom: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.product-list {
+  border: 1px solid salmon;
+  margin-bottom: 20px;
+
+  height: 184px;
 }
