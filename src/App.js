@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
+import checkboxOn from './assets/checkboxOn.svg'
+import checkboxOff from './assets/checkboxOff.svg'
 import './App.css';
 
 function App() {
@@ -10,7 +12,36 @@ function App() {
         </div>
         <div className="app__main">
           <div className="app__sidebar">
-              1
+              <div className="filter-group">
+                  <h3>Количество пересадок</h3>
+                  <form>
+                      <label>
+                          <input type="checkbox"  className="input visually-hidden" />
+                          <span className="checker"></span>
+                          Все
+                      </label>
+                      <label>
+                          <input type="checkbox"  className="input visually-hidden" />
+                          <span className="checker"></span>
+                          Без пересадок
+                      </label>
+                      <label>
+                          <input type="checkbox"  className="input visually-hidden" />
+                          <span className="checker"></span>
+                          1 пересадка
+                      </label>
+                      <label>
+                          <input type="checkbox"  className="input visually-hidden" />
+                          <span className="checker"></span>
+                          2 пересадки
+                      </label>
+                      <label>
+                          <input type="checkbox"  className="input visually-hidden" />
+                          <span className="checker"></span>
+                          3 пересадки
+                      </label>
+                  </form>
+              </div>
           </div>
           <div className="app__content">
               <div className="ticket-option-group">

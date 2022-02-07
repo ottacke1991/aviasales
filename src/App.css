@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .App {
   background: #e5e5e5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .app__container {
@@ -30,9 +38,77 @@
 
 .app__sidebar {
   border: 1px solid orangered;
+  color: #4a4a4a;
+  font-size: 13px;
+  /*padding: 20px;*/
+  /*width: 232px;*/
+  min-width: 232px;
 
-  width: 232px;
 }
+
+.app__sidebar h3 {
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+
+.app__sidebar form {
+  font-weight: 400;
+  margin: 0 -20px;
+}
+
+
+.app__sidebar label {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px 10px 50px;
+  text-transform: none;
+}
+
+.app__sidebar label:hover {
+  background: #F1FCFF;
+
+}
+
+.app__sidebar .filter-group {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.input {
+
+}
+
+.checker {
+  position: absolute;
+  /*top: 2px;*/
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+  background-image: url(./assets/checkboxOff.svg);
+}
+
+.input:checked  + .checker{
+  background-image: url(./assets/checkboxOn.svg);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .app__content {
   border: 1px solid gold;
@@ -54,6 +130,5 @@
 .product-list {
   border: 1px solid salmon;
   margin-bottom: 20px;
-
   height: 184px;
 }
