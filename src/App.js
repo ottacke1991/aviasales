@@ -46,11 +46,49 @@ function App() {
           </div>
           <div className="app__content">
               <div className="ticket-option-group">
-                  <div className="ticket-option ticket-option__left-sided">Самый дешевый</div>
+                  <div className="ticket-option ticket-option__left-sided ticket-option__pressed">Самый дешевый</div>
                   <div className="ticket-option ticket-option__center">Самый быстрый</div>
                   <div className="ticket-option ticket-option__right-sided">Оптимальный</div>
               </div>
               <div className="ticket-list">
+                  <div className="ticket">
+                      <div className="ticket__header">
+                          <div className="ticket__price">13 400 Р</div>
+                          <div className="ticket__logo">
+                              <img src={ticket} alt="S7" />
+                          </div>
+                      </div>
+                      <div className="ticket__body">
+                          <div className="ticket__segment">
+                              <div className="ticket-segment__flight">
+                                  <p className="ticket-segment__flight-label">MOV - HKT</p>
+                                  <p className="ticket-segment__flight-value">10:45 - 8:00</p>
+                              </div>
+                              <div className="ticket-segment__flight">
+                                  <p className="ticket-segment__flight-label">В ПУТИ</p>
+                                  <p className="ticket-segment__flight-value">21ч 15м</p>
+                              </div>
+                              <div className="ticket-segment__flight">
+                                  <p className="ticket-segment__flight-label">2 ПЕРЕСАДКИ</p>
+                                  <p className="ticket-segment__flight-value">HKG, JNB</p>
+                              </div>
+                          </div>
+                          <div className="ticket__segment">
+                          <div className="ticket-segment__flight">
+                              <p className="ticket-segment__flight-label">MOV - HKT</p>
+                              <p className="ticket-segment__flight-value">10:45 - 8:00</p>
+                          </div>
+                          <div className="ticket-segment__flight">
+                              <p className="ticket-segment__flight-label">В ПУТИ</p>
+                              <p className="ticket-segment__flight-value">21ч 15м</p>
+                          </div>
+                          <div className="ticket-segment__flight">
+                              <p className="ticket-segment__flight-label">2 ПЕРЕСАДКИ</p>
+                              <p className="ticket-segment__flight-value">HKG, JNB</p>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
                   <div className="ticket">
                       <div className="ticket__header">
                           <div className="ticket__price">13 400 Р</div>
