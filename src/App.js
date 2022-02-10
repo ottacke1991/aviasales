@@ -166,6 +166,11 @@ function App() {
                       </div>
                   </div>
               </div>
+              <div className="show-more-tickets">
+                  <button className="show-more-tickets__button" type="button" data-test-id="button">
+                      <div className="show-more-tickets__button-label">Показать еще 5 билетов!</div>
+                  </button>
+              </div>
           </div>
         </div>
       </div>

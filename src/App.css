@@ -242,8 +242,30 @@
   width: 140px;
   /*font: #4a4a4a;*/
 }
+.show-more-tickets {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.show-more-tickets__button {
+  min-width: 502px;
+  background: #2196F3;
+  border-radius: 5px;
+  border-color: #2196F3;
+  border-style: solid;
+  padding: 15px;
+}
 
 
+.show-more-tickets__button-label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
 
 
