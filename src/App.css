@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
+/* хорошим тоном является вынесение частых стилец в переменные ( например color: #4a4a4a, но в данном случае проще их вынести в апп*/
 
 * {
   box-sizing: border-box;
@@ -7,15 +7,17 @@
 }
 
 .App {
-  background: #e5e5e5;
+  /*background: #e5e5e5;*/
+  background: #F3F7FA;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #4a4a4a;
 }
 
 .app__container {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   min-height: 100vh;
   max-width: 754px;
   margin: 0 auto;
@@ -24,21 +26,21 @@
 }
 
 .app__header {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   padding: 50px 0;
   text-align: center;
 }
 
 .app__main {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
 }
 
 .app__sidebar {
-  border: 1px solid orangered;
-  color: #4a4a4a;
+  /*border: 1px solid orangered;*/
+  /*color: #4a4a4a;*/
   font-size: 13px;
   /*padding: 20px;*/
   /*width: 232px;*/
@@ -111,7 +113,7 @@
 
 
 .app__content {
-  border: 1px solid gold;
+  /*border: 1px solid gold;*/
   width: 502px;
   display: flex;
   flex-direction: column;
@@ -120,15 +122,126 @@
 }
 
 .ticket-option-group {
-  border: 1px solid lawngreen;
+  /*border: 3px solid lawngreen;*/
   height: 50px;
   margin-bottom: 20px;
+  min-width: 502px;
+  justify-content: center;
+  /*color: #FFFFFF;*/
+  align-items: center;
+  /*background: #FFFFFF;*/
+  display: flex;
+  /*border: 1px solid #DFE5EC;*/
+  /*box-sizing: border-box;*/
+  /*border-radius: 0 0 10px 10px;*/
+  /*border-radius: 3px 3px 3px 3px;*/
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 
 }
 
+.ticket-option {
+  border: 1px solid #DFE5EC;
+  background-color: #fff;
+  line-height: 50px;
+  text-align: center;
+  min-width: 169px;
+}
 
-.product-list {
-  border: 1px solid salmon;
+.ticket-option__left-sided {
+  border-radius: 5px 0  0 5px;
+  border-right: 0px;
+}
+
+.ticket-option__center {
+
+}
+
+.ticket-option__right-sided {
+  border-radius: 0 5px 5px 0;
+  border-left: 0px;
+}
+
+
+.ticket-option:hover {
+  background: #2196f3;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.ticket-list {
+  /*margin-bottom: 20px;*/
+  min-height: 184px;
+}
+
+.ticket {
+  /*border: 1px solid #a446dc;*/
+  min-height: 184px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 20px;
-  height: 184px;
 }
+
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket__price {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary Colors/Primary 500 */
+
+  color: #2196F3;
+
+}
+.ticket__logo {
+  margin-top: 6px;
+}
+
+.ticket__body {
+
+}
+
+.ticket__segment {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ticket-segment__flight-label {
+  color: #4a4a4a;
+  /*font: #4a4a4a;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
